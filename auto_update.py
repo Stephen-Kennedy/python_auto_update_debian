@@ -20,6 +20,7 @@ if not os.path.isfile(f):
         fo.write('\n')
         fo.write("os.system('apt-get update -y') \n")
         fo.write("os.system('apt-get upgrade -y') \n")
+        fo.write("os.system('apt-get autoremove -y') \n")
         fo.close()
         os.chmod(f, 775)
 
